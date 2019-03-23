@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using XRDemo.BasicUIDemo;
+using XRDemo.WebServiceDemo;
 
 namespace XRDemo
 {
@@ -29,9 +30,9 @@ namespace XRDemo
                 Navigation.PushModalAsync(new BasicUIDetailPage());
             }
 
-            if (itemSelectedData.Equals("Webserivce Demo"))
+            if (itemSelectedData.Equals("WebService Demo"))
             {
-                //Navigation.PushModalAsync(new WebServiceDetailPage());
+                Navigation.PushModalAsync(new WebServiceDetailPage());
             }
 
             if (itemSelectedData.Equals("Database Demo"))

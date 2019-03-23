@@ -6,9 +6,8 @@
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Basic UI Demo</x:String>
-                    <x:String>Webserivce Demo</x:String>
+                    <x:String>WebService Demo</x:String>
                     <x:String>Database Demo</x:String>
-                    <x:String>Bluetooth Demo</x:String>
                 </x:Array>
             </ListView.ItemsSource>
         </ListView>
