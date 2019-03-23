@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using XRDemo.BasicUIDemo;
+using XRDemo.SqliteDemo;
 using XRDemo.WebServiceDemo;
 
 namespace XRDemo
@@ -37,7 +38,7 @@ namespace XRDemo
 
             if (itemSelectedData.Equals("Database Demo"))
             {
-                //Navigation.PushModalAsync(new NotePage());
+                Navigation.PushModalAsync(new NotePage());
             }
         }
 

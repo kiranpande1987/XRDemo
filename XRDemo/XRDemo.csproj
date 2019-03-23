@@ -13,10 +13,12 @@
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WebServiceDemo\" />
     <Folder Include="SqliteDemo\" />
     <Folder Include="BasicUIDemo\" />
+    <Folder Include="SqliteDemo\Data\" />
   </ItemGroup>
 </Project>
