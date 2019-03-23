@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XRDemo.BasicUIDemo;
 
 namespace XRDemo
 {
@@ -25,7 +26,7 @@ namespace XRDemo
 
             if (itemSelectedData.Equals("Basic UI Demo"))
             {
-                //Navigation.PushModalAsync(new BasicUIDetailPage());
+                Navigation.PushModalAsync(new BasicUIDetailPage());
             }
 
             if (itemSelectedData.Equals("Webserivce Demo"))
