@@ -38,7 +38,7 @@ namespace XRDemo.WebServiceDemo
 
             var request = new HttpRequestMessage
             {
-                RequestUri = new Uri("https://api.myjson.com/bins/1a010u"),
+                RequestUri = new Uri("https://api.myjson.com/bins/gnq66"),
                 Method = HttpMethod.Get
             };
 
