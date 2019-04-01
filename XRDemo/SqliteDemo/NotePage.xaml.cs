@@ -10,6 +10,12 @@ namespace XRDemo.SqliteDemo
             InitializeComponent();
 
             add.Clicked += OnNoteAddedClicked;
+            imgBack.Clicked += ImgBack_Clicked;
+        }
+
+        private async void ImgBack_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
 
         void Add_Clicked(object sender, EventArgs e)

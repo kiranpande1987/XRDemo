@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XRDemo.SqliteDemo.NotePage">
-    <StackLayout  Margin="10, 35, 0, 0">
-        <Label Text="Database Demo" FontSize="Large" HorizontalTextAlignment="Center"/>
+    <StackLayout Margin="10, 35, 0, 0">
+        <StackLayout Margin="5, 15, 0, 0" Orientation="Horizontal">
+            <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png" />
+            <Label Text="Database Demo" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
         <ListView x:Name="listView" ItemSelected="OnListViewItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -9,6 +12,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="+" FontSize="Large" HorizontalOptions="End" x:Name="add" Margin="20, 20, 10, 10"/>
+        <Button Text="+" FontSize="Large" HorizontalOptions="End" x:Name="add" Margin="0, 0, 20, 20" />
     </StackLayout>
 </ContentPage>

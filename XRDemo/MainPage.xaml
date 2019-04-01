@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XRDemo" x:Class="XRDemo.MainPage">
     <StackLayout Margin="10, 35, 10, 0">
-        <Label Text="Multiple Demos" FontSize="Large" HorizontalTextAlignment="Center" />
+        <StackLayout Orientation="Horizontal">
+            <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png" />
+            <Label Text="Xamarin Demos" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
         <ListView x:Name="listViewDemo" ItemSelected="OnListViewItemSelected" ItemTapped="OnListViewItemTappedAsync">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">

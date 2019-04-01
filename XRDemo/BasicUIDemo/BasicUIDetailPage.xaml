@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XRDemo.BasicUIDemo.BasicUIDetailPage">
     <StackLayout Margin="10, 35, 10, 0">
-        <Label Text="Basic UI Demo" FontSize="Large" HorizontalTextAlignment="Center"/>
-        <Entry x:Name="edtText" />
-        <Button x:Name="btnAdd" Text="Submit" HorizontalOptions="FillAndExpand" BackgroundColor="Teal" TextColor="White"/>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Button x:Name="btnLoadList" Text="List View" HorizontalOptions="FillAndExpand" BackgroundColor="Silver"/>
-            <Button x:Name="btnLoadGrid" Text="Grid View" HorizontalOptions="FillAndExpand" BackgroundColor="Silver"/>
+        <StackLayout Margin="5, 15, 0, 0" Orientation="Horizontal">
+            <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png" />
+            <Label Text="Basic UI Demo" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
         </StackLayout>
-        <ListView x:Name="listView"/>
+        <Entry x:Name="edtText" />
+        <Button x:Name="btnAdd" Text="Submit" HorizontalOptions="FillAndExpand" BackgroundColor="Teal" TextColor="White" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button x:Name="btnLoadList" Text="List View" HorizontalOptions="FillAndExpand" BackgroundColor="Silver" />
+            <Button x:Name="btnLoadGrid" Text="Grid View" HorizontalOptions="FillAndExpand" BackgroundColor="Silver" />
+        </StackLayout>
+        <ListView x:Name="listView" />
         <Grid x:Name="gridView" IsVisible="false" />
     </StackLayout>
 </ContentPage>

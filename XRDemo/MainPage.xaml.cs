@@ -15,6 +15,12 @@ namespace XRDemo
         public MainPage()
         {
             InitializeComponent();
+            imgBack.Clicked += ImgBack_Clicked;
+        }
+
+        private void ImgBack_Clicked(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
         }
 
         void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)

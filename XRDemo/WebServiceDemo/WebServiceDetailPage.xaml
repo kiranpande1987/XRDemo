@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XRDemo.WebServiceDemo.WebServiceDetailPage">
     <StackLayout Margin="10, 35, 10, 0">
-        <Label Text="WebService Demo" FontSize="Large" HorizontalTextAlignment="Center" />
+        <StackLayout Margin="5, 15, 0, 0" Orientation="Horizontal">
+            <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png" />
+            <Label Text="WebService Demo" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
         <Button x:Name="btnLoadDataFromWebService" Text="Load" />
-        <ActivityIndicator x:Name="delayIndicator" VerticalOptions="CenterAndExpand"/>
+        <ActivityIndicator x:Name="delayIndicator" VerticalOptions="CenterAndExpand" />
         <ListView x:Name="listView" ItemsSource="{Binding Monkeys}" HasUnevenRows="true">
             <ListView.ItemTemplate>
                 <DataTemplate>

@@ -24,6 +24,13 @@ namespace XRDemo.BasicUIDemo
             btnAdd.Clicked += BtnAdd_ClickedAsync;
             btnLoadList.Clicked += BtnLoadList_Clicked;
             btnLoadGrid.Clicked += BtnLoadGrid_Clicked;
+            
+            imgBack.Clicked += ImgBack_Clicked;
+        }
+
+        private async void ImgBack_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
 
         void BtnLoadList_Clicked(object sender, EventArgs e)
@@ -35,6 +42,7 @@ namespace XRDemo.BasicUIDemo
         {
             showGridView();
         }
+
 
         async void BtnAdd_ClickedAsync(object sender, System.EventArgs e)
         {

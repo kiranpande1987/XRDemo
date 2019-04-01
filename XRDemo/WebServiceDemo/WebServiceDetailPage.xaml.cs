@@ -24,7 +24,13 @@ namespace XRDemo.WebServiceDemo
 
         public void setListener()
         {
-            btnLoadDataFromWebService.Clicked += BtnLoadDataFromWebService_Clicked;
+            btnLoadDataFromWebService.Clicked += BtnLoadDataFromWebService_Clicked; 
+            imgBack.Clicked += ImgBack_Clicked;
+        }
+
+        private async void ImgBack_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
 
         void BtnLoadDataFromWebService_Clicked(object sender, EventArgs e)
