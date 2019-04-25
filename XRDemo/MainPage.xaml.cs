@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Plugin.LocalNotifications;
+using Plugin.LocalNotifications.Abstractions;
 using Xamarin.Forms;
 using XRDemo.BasicUIDemo;
+using XRDemo.CPPMathDemo;
 using XRDemo.SqliteDemo;
 using XRDemo.WebServiceDemo;
 
@@ -46,7 +49,64 @@ namespace XRDemo
             {
                 Navigation.PushModalAsync(new NotePage());
             }
+
+            if (itemSelectedData.Equals("CPP Demo"))
+            {
+                Navigation.PushModalAsync(new CPPMathPage());
+            }
+
+            if (itemSelectedData.Equals("Notification Demo"))
+            {
+                //if(Device.RuntimePlatform == Device.iOS)
+                //{
+                //    var content = new UNMutableNotificationContent()
+                //    {
+                //        Title = "Critical alert title",
+                //        Body = "Text of the critical alert",
+                //        CategoryIdentifier = "my-critical-alert-category",
+                //        Sound = UNNotificationSound.DefaultCriticalSound
+                //        //Sound = UNNotificationSound.GetCriticalSound("my_critical_sound.m4a", 1.0f)
+                //    };
+
+                //    var request = UNNotificationRequest.FromIdentifier(
+                //        Guid.NewGuid().ToString(),
+                //        content,
+                //        UNTimeIntervalNotificationTrigger.CreateTrigger(3, false)
+                //    );
+
+                //    var center = UNUserNotificationCenter.Current;
+                //    center.AddNotificationRequest(request, null);
+                //}
+                //else
+                //{
+                //    ILocalNotifications localNotifications = DependencyService.Get<ILocalNotifications>();
+                //    localNotifications.Show("Test", "Local notification alert", 1);
+                //}
+            }
         }
+
+
+
+        //void CreateNotificationChannel()
+        //{
+        //    if (Build.VERSION.SdkInt < BuildVersionCodes.O)
+        //    {
+        //        // Notification channels are new in API 26 (and not a part of the
+        //        // support library). There is no need to create a notification
+        //        // channel on older versions of Android.
+        //        return;
+        //    }
+
+        //    string channelName = "Channel";
+        //    string channelDescription = "Channel Description";
+        //    var channel = new Android.App.NotificationChannel("10", channelName, NotificationImportance.Default)
+        //    {
+        //        Description = channelDescription
+        //    };
+
+        //    var notificationManager = (NotificationManager)GetSystemService(NotificationService);
+        //    notificationManager.CreateNotificationChannel(channel);
+        //}
 
     }
 }
