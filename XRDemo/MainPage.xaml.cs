@@ -8,6 +8,7 @@ using Plugin.LocalNotifications.Abstractions;
 using Xamarin.Forms;
 using XRDemo.BasicUIDemo;
 using XRDemo.CPPMathDemo;
+using XRDemo.NotificationDemo;
 using XRDemo.SqliteDemo;
 using XRDemo.WebServiceDemo;
 
@@ -57,6 +58,7 @@ namespace XRDemo
 
             if (itemSelectedData.Equals("Notification Demo"))
             {
+                Navigation.PushModalAsync(new NotificationPage());
                 //if(Device.RuntimePlatform == Device.iOS)
                 //{
                 //    var content = new UNMutableNotificationContent()

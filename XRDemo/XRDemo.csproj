@@ -10,12 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
     <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
     <PackageReference Include="MathFuncs" Version="1.0.0" />
+    <PackageReference Include="Xam.Plugin.LocalNotifications" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WebServiceDemo\" />
@@ -23,6 +24,7 @@
     <Folder Include="BasicUIDemo\" />
     <Folder Include="SqliteDemo\Data\" />
     <Folder Include="CPPMathDemo\" />
+    <Folder Include="NotificationDemo\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android">

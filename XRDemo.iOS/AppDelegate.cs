@@ -26,23 +26,25 @@ namespace XRDemo.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            DependencyService.Register<LocalNotificationsImplementation>();
+
+            if(UIDevice.CurrentDevice.CheckSystemVersion(10,0))
+            {
+                UNUserNotificationCenter.Current.RequestAuthorization(
+                    UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound,
+                    (approved, error) => { });
+
+                UNUserNotificationCenter.Current.Delegate = new UserNotificationCenterDelegate();
+            }
+            else if(UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
+            {
+                var settings = UIUserNotificationSettings.GetSettingsForTypes(
+                    UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, new NSSet());
+
+                UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
+            }
 
             LoadApplication(new App());
 
-            //var settings = UIUserNotificationSettings.GetSettingsForTypes(
-            //                    UIUserNotificationType.Alert
-            //                    | UIUserNotificationType.Badge
-            //                    | UIUserNotificationType.Sound,
-            //                    new NSSet());
-            //UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
-
-
-
-            UserNotifications.UNUserNotificationCenter center = UNUserNotificationCenter.Current;
-            UNAuthorizationOptions optio = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Sound | UNAuthorizationOptions.CriticalAlert;
-            center.RequestAuthorization(optio, (bool success, NSError error) => { });
-        
             return base.FinishedLaunching(app, options);
         }
     }
