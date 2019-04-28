@@ -2,6 +2,7 @@
 using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XRDemo.BluetoothDemo;
 using XRDemo.SqliteDemo.Data;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -23,8 +24,11 @@ namespace XRDemo
             }
         }
 
+
         public App()
         {
+            DependencyService.Get<IPage>();
+
             InitializeComponent();
 
             MainPage = new MainPage();

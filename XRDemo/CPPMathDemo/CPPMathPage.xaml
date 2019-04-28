@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XRDemo.CPPMathDemo.CPPMathPage">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Margin="5, 80, 5, 0">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Entry x:Name="edtFirstNumber" HorizontalOptions="FillAndExpand"/>
-                <Entry x:Name="edtSecondNumber" HorizontalOptions="FillAndExpand"/>
+        <StackLayout Margin="10, 35, 10, 0" Orientation="Vertical">
+            <StackLayout Margin="5, 15, 0, 0" Orientation="Horizontal">
+                <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png" />
+                <Label Text="C++ Binding" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Button x:Name="btnAddition" Text="+" HorizontalOptions="FillAndExpand"/>
-                <Button x:Name="btnSubtraction" Text="-" HorizontalOptions="FillAndExpand"/>
-                <Button x:Name="btnMultiplication" Text="X" HorizontalOptions="FillAndExpand"/>
-                <Button x:Name="btnDivision" Text="/" HorizontalOptions="FillAndExpand"/>
+                <Entry x:Name="edtFirstNumber" HorizontalOptions="FillAndExpand" Keyboard="Numeric" />
+                <Entry x:Name="edtSecondNumber" HorizontalOptions="FillAndExpand" Keyboard="Numeric" />
             </StackLayout>
-            <Label x:Name="txtResult" Text="Result = " HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button x:Name="btnAddition" Text="+" HorizontalOptions="FillAndExpand" />
+                <Button x:Name="btnSubtraction" Text="-" HorizontalOptions="FillAndExpand" />
+                <Button x:Name="btnMultiplication" Text="X" HorizontalOptions="FillAndExpand" />
+                <Button x:Name="btnDivision" Text="/" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <Label x:Name="txtResult" Text="Result = " HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

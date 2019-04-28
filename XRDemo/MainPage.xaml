@@ -13,6 +13,8 @@
                     <x:String>Database Demo</x:String>
                     <x:String>Notification Demo</x:String>
                     <x:String>CPP Demo</x:String>
+                    <x:String>Bluetooth Demo</x:String>
+                    <x:String>UI Component Demo</x:String>
                 </x:Array>
             </ListView.ItemsSource>
         </ListView>

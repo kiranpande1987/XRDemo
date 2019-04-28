@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XRDemo.Droid.BTDemo.BluetoothDemo">
+    <ContentPage.Content>
+        <StackLayout Margin="10, 35, 10, 0" Orientation="Vertical">
+            <StackLayout Margin="5, 15, 0, 0" Orientation="Horizontal">
+                <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png" />
+                <Label Text="Bluetooth Demo (Android)" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Large" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button x:Name="btnBTON" Text="BT ON" HorizontalOptions="FillAndExpand" />
+                <Button x:Name="btnBTOFF" Text="BT OFF" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <Button x:Name="btnBTScan" Text="Scan" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

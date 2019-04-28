@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XRDemo.NotificationDemo.NotificationPage">
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+    <StackLayout Margin="10, 35, 10, 0">
+        <StackLayout Margin="5, 15, 0, 0" Orientation="Horizontal">
+            <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png"/>
+            <Label Text="Local Notification" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
         <Button Text="Send Notification" Clicked="Handle_Clicked"/>
     </StackLayout>
 </ContentPage>

@@ -16,7 +16,12 @@ namespace XRDemo.NotificationDemo
 
         public void init()
         {
+            imgBack.Clicked += ImgBack_Clicked;
+        }
 
+        private async void ImgBack_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
 
         void Handle_Clicked(object sender, System.EventArgs e)

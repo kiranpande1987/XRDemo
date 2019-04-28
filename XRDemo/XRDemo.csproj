@@ -17,6 +17,7 @@
     <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
     <PackageReference Include="MathFuncs" Version="1.0.0" />
     <PackageReference Include="Xam.Plugin.LocalNotifications" Version="1.0.0" />
+    <PackageReference Include="Plugin.BluetoothLE" Version="6.2.3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WebServiceDemo\" />
@@ -25,6 +26,8 @@
     <Folder Include="SqliteDemo\Data\" />
     <Folder Include="CPPMathDemo\" />
     <Folder Include="NotificationDemo\" />
+    <Folder Include="BluetoothDemo\" />
+    <Folder Include="UIComponentDemo\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android">
@@ -32,6 +35,9 @@
     </Reference>
     <Reference Include="Xamarin.iOS">
       <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\12.2.1.15\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\9.2.3-0\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v8.1\Mono.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XRDemo.UIComponentDemo.UIComponentPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10, 35, 10, 0" Orientation="Vertical">
+                <StackLayout Margin="5, 15, 0, 0" Orientation="Horizontal">
+                    <ImageButton x:Name="imgBack" HeightRequest="25" WidthRequest="25" Source="back.png" />
+                    <Label Text="UI Component" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+                </StackLayout>
+                <Entry Text="This is single line input." />
+                <Editor Text="This is multi-line input. This is multi-line input. This is multi-line input." />
+                <Frame OutlineColor="White" CornerRadius="0" BorderColor="Black">
+                    <Label Text="This is single line label." />
+                </Frame>
+                <Label Style="{DynamicResource LabelPageHeadingStyle}" Text="This is multi-line label. This is multi-line label. This is multi-line label. This is multi-line label. This is multi-line label. This is multi-line label. " MaxLines="3" />
+                <SearchBar />
+                <StackLayout Orientation="Vertical">
+                    <ProgressBar Progress="0.2" x:Name="pb" />
+                    <Button x:Name="btnClick" Text="Click" TextColor="White" BackgroundColor="Teal" />
+                </StackLayout>
+                <Slider />
+                <StackLayout Orientation="Horizontal">
+                    <Stepper Maximum="10" Minimum="0" x:Name="stepper" Increment="1" ValueChanged="Handle_ValueChanged" />
+                    <Label x:Name="lblStepper" Text="Value : 0" VerticalTextAlignment="Center" FontSize="Large" />
+                </StackLayout>
+                <Switch />
+                <TimePicker />
+                <DatePicker />
+                <Picker x:Name="Gender" HorizontalOptions="FillAndExpand">
+                    <Picker.Items>
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                </Picker>
+                <WebView WidthRequest="400" HeightRequest="400" Source="https://www.google.com/" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
