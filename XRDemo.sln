@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XRDemo.iOS", "XRDemo.iOS\XR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XRDemo", "XRDemo\XRDemo.csproj", "{358DB63D-B42C-4A12-8782-4F60BF218E8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XRDemoTest", "XRDemoTest\XRDemoTest.csproj", "{46CDFF05-8A35-4672-8697-5B9542E77202}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,5 +69,21 @@ Global
 		{358DB63D-B42C-4A12-8782-4F60BF218E8D}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
 		{358DB63D-B42C-4A12-8782-4F60BF218E8D}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
 		{358DB63D-B42C-4A12-8782-4F60BF218E8D}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Release|iPhone.Build.0 = Release|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{46CDFF05-8A35-4672-8697-5B9542E77202}.AppStore|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
